@@ -1,1 +1,3 @@
-/Users/axel/dotfiles/emacs.d/init_osx_custom.el
+;; meta on cmd
+(setq mac-option-modifier 'super)
+(setq mac-command-modifier 'meta)
