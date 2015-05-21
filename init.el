@@ -3,7 +3,6 @@
 ;; Interactively Do Things
 (require 'ido)
 
-(require 'neotree)
 (setq-default show-trailing-whitespace t)
 
 (set-face-attribute 'default nil :height 110)
@@ -26,6 +25,8 @@
 
 ;; use two spaces instead of four indentation in js-mode (used for .json files)
 (setq js-indent-level 2)
+
+(require 'neotree)
 
 (require 'rainbow-delimiters)
 (add-hook 'js2-mode-hook 'rainbow-delimiters-mode)
