@@ -86,6 +86,8 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+(custom-set-variables
+ '(markdown-command "/usr/local/bin/markdown"))
 
 ;; size
 (set-face-attribute 'default nil :height 150)
