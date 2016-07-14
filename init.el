@@ -90,6 +90,7 @@
 ;; size
 (set-face-attribute 'default nil :height 150)
 
+(load "~/.emacs.d/autosave.el")
 (load "~/.emacs.d/init_look_and_feel.el")
 (load "~/.emacs.d/init_keybinding.el")
 (load "~/.emacs.d/init_osx_custom.el")
