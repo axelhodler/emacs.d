@@ -92,6 +92,17 @@
 ;; size
 (set-face-attribute 'default nil :height 150)
 
+(defun swap-words (a b)
+  "Replace all occurances of a with b and vice versa"
+  (interactive "*sFirst Swap Word: \nsSecond Swap Word: ")
+  (save-excursion
+    (while (re-search-forward (concat (regexp-quote a) "\\|" (regexp-quote b)))
+      (if (y-or-n-p "Swap?")
+      (if (equal (match-string 0) a)
+          (replace-match (regexp-quote b))
+        (replace-match (regexp-quote a))))
+      )))
+
 (load "~/.emacs.d/autosave.el")
 (load "~/.emacs.d/init_look_and_feel.el")
 (load "~/.emacs.d/init_keybinding.el")
